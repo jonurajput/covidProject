@@ -1,0 +1,46 @@
+.map1{
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 222;
+
+    background-color: black;
+}
+.map1 .leaflet-container{
+    height: 100%;
+    width: 100%;
+
+}
+.zoom1{
+    z-index: 300;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.zoom1:hover{
+    opacity: 0.6;
+    color: grey;
+}
+.danger{
+    width:30px;
+    animation: sample 2s infinite alternate-reverse;
+}
+@keyframes sample{
+    0%{
+        width: 30px;
+        opacity: 0.4;
+    }
+    50%{
+        width: 40px;
+        opacity: 0.8;
+    }
+    1000%{
+        width: 50px;
+        opacity: 1;
+    }
+}
